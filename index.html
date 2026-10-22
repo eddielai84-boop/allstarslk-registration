@@ -1,0 +1,1711 @@
+
+<!DOCTYPE html>
+<html lang="zh-MY">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>LK❤️EDU TAMAN CONNAUGHT | 2026-2027 新学生报名表格</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', 'Noto Sans SC', sans-serif;
+      background: linear-gradient(180deg, #fffdf5 0%, #fef9c3 35%, #f8fafc 100%);
+    }
+    .step-section { display: none; animation: fadeIn 0.25s ease-out; }
+    .step-section.active { display: block; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .lk-logo-text {
+      color: #ffffff;
+      -webkit-text-stroke: 2.5px #dc2626;
+      text-shadow: 0 3px 0 #b91c1c;
+    }
+    .option-card:has(input:checked) {
+      border-color: #dc2626;
+      background-color: #fff1f2;
+      box-shadow: 0 4px 14px -2px rgba(220, 38, 38, 0.14);
+    }
+    .option-card.disabled-card {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+    .price-row:has(input:checked) {
+      background-color: #fef2f2 !important;
+      box-shadow: inset 5px 0 0 0 #dc2626;
+    }
+    .price-row:has(input:checked) .select-badge {
+      background-color: #dc2626;
+      color: #ffffff;
+      border-color: #dc2626;
+    }
+    .sub-price-row:has(input:checked) {
+      background-color: #fee2e2 !important;
+    }
+    .sub-price-row:has(input:checked) .select-badge {
+      background-color: #dc2626;
+      color: #ffffff;
+      border-color: #dc2626;
+    }
+    .input-error {
+      border-color: #dc2626 !important;
+      background-color: #fef2f2 !important;
+      box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+    }
+  </style>
+</head>
+<body class="min-h-screen text-slate-800">
+
+  <!-- ================= 顶部 LK❤️EDU 海报风格品牌横幅 ================= -->
+  <header class="relative overflow-hidden bg-gradient-to-b from-[#e0f2fe] via-[#fffbeb] to-[#fef08a] border-b-4 border-red-600 shadow-md">
+    <div class="max-w-4xl mx-auto px-4 pt-6 pb-8 sm:py-9 text-center relative z-10">
+      <div class="inline-block">
+        <div class="text-4xl sm:text-6xl font-black tracking-wider lk-logo-text select-none">
+          LK<span class="text-red-600" style="-webkit-text-stroke: 0;">❤️</span>EDU<sup class="text-sm sm:text-lg text-red-600 font-bold ml-0.5" style="-webkit-text-stroke: 0;">®</sup>
+        </div>
+        <div class="bg-red-600 text-white text-xs sm:text-sm font-bold tracking-widest uppercase py-0.5 px-6 rounded-sm shadow-sm mt-1">
+          Be The Legend
+        </div>
+        <div class="text-slate-900 font-extrabold text-sm sm:text-lg tracking-widest mt-1">
+          TAMAN CONNAUGHT
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <span class="inline-block bg-red-600 text-white text-xs sm:text-sm font-extrabold px-5 py-1 rounded-full shadow-sm tracking-widest">
+          教育理念
+        </span>
+        <div class="mt-2.5 flex flex-wrap items-center justify-center gap-2 sm:gap-5 text-sm sm:text-lg font-extrabold">
+          <span class="text-red-600">❤️ 全人教育为主</span>
+          <span class="text-sky-700">❤️ STREAM 为辅</span>
+          <span class="text-emerald-700">❤️ 心态至上</span>
+        </div>
+        <div class="w-48 sm:w-80 h-1 bg-amber-400 rounded-full mx-auto mt-1.5"></div>
+      </div>
+
+      <div class="mt-4 flex flex-wrap items-center justify-center gap-1.5 text-xs sm:text-sm font-bold">
+        <span class="bg-amber-400 text-slate-900 px-2.5 py-1 rounded-lg">我们专为</span>
+        <span class="bg-sky-100/90 border border-sky-200 text-slate-800 px-3 py-1 rounded-full">
+          康乐小学、燕美小学、州立小学，坤成小学，循人小学等
+        </span>
+        <span class="text-slate-700">的学生量身打造——</span>
+      </div>
+
+      <div class="mt-3">
+        <div class="inline-block bg-gradient-to-r from-red-600 via-red-500 to-red-600 text-white text-base sm:text-xl font-black px-6 py-2 rounded-2xl shadow-md tracking-wide">
+          ✨ 全人教育小学安亲补习班 · 2026–2027 新生报名表 ✨
+        </div>
+        <p class="text-xs text-slate-600 font-semibold mt-1.5">
+          New Student Registration Form · ALLSTARS EDU LK (PUSAT JAGAAN SINAR CAHAYA LK)
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-3 sm:px-6 mt-5">
+    <!-- 顶部 5 步进度条卡片 -->
+    <div id="topProgressCard" class="bg-white rounded-2xl shadow-sm border-2 border-amber-200 p-4 sm:p-5 mb-6">
+      <div class="flex items-center justify-between text-xs sm:text-sm font-bold text-slate-700 mb-2.5">
+        <span id="stepTitleDisplay">第 1 / 5 步：了解收费与勾选课程 Courses & Fees</span>
+        <span id="stepPercentDisplay" class="text-red-600 font-extrabold">20%</span>
+      </div>
+      <div class="w-full h-2.5 bg-amber-100 rounded-full overflow-hidden">
+        <div id="progressBar" class="h-full bg-gradient-to-r from-red-600 via-orange-500 to-amber-400 transition-all duration-300 rounded-full" style="width: 20%;"></div>
+      </div>
+      <div class="grid grid-cols-5 gap-1 mt-3 text-[11px] text-center text-slate-400 font-semibold">
+        <div id="tab-1" class="text-red-600 font-extrabold">1. 课程学费</div>
+        <div id="tab-2">2. 学生资料</div>
+        <div id="tab-3">3. 家长接送</div>
+        <div id="tab-4">4. 备注与目标</div>
+        <div id="tab-5">5. 汇款确认</div>
+      </div>
+    </div>
+
+    <!-- 全局错误提示栏 -->
+    <div id="errorAlert" class="hidden mb-5 p-4 rounded-xl bg-red-50 border-2 border-red-400 text-red-700 text-sm font-bold flex items-center justify-between shadow-md">
+      <span id="errorText">请先填写当前步骤的所有必填栏位（带 * 号）。</span>
+      <button type="button" onclick="hideError()" class="text-red-500 hover:text-red-800 font-extrabold ml-4">✕</button>
+    </div>
+
+    <!-- 主表单开始 -->
+    <form id="registrationForm" novalidate class="bg-white rounded-2xl shadow-md border border-slate-200 p-4 sm:p-8">
+
+      <!-- ================= STEP 1 (前页): 三栏式收费表与课程选择 ================= -->
+      <section class="step-section active" data-step="1">
+        <div class="border-b-2 border-amber-100 pb-4 mb-5">
+          <div class="inline-block bg-red-100 text-red-700 text-xs font-extrabold px-3 py-1 rounded-full mb-2">
+            STEP 1 · 先选课程再填资料
+          </div>
+          <h2 class="text-lg sm:text-xl font-extrabold text-slate-900 flex items-center gap-2">
+            <span class="w-2 h-6 bg-red-600 rounded-full inline-block"></span>
+            我们的服务与学费选择｜Tuition & Daycare Services <span class="text-red-600">*</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1">
+            请先了解以下课程收费，并在表格最右侧点击 <strong>【勾选】</strong> 选择您要报读的服务（可多选）。<br/>
+            新学生一次性报名费 <strong class="text-red-600">RM 90</strong>（包括我们精装 LK T-shirt）将自动计入首月总额，第 2 个月开始自动移除。
+          </p>
+        </div>
+
+        <!-- 四大安心承诺核心价值横幅 -->
+        <div class="bg-gradient-to-r from-amber-50 via-red-50/70 to-amber-50 border-2 border-amber-300 rounded-2xl p-4 sm:p-5 mb-7 shadow-sm">
+          <div class="flex items-center gap-2 text-xs sm:text-sm font-extrabold text-red-700 mb-3">
+            <span class="bg-red-600 text-white px-2.5 py-0.5 rounded-full text-xs">为什么家长首选 LK❤️EDU？</span>
+            <span>四大安心承诺 · 真正一价全包无隐藏杂费</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs sm:text-sm">
+            <div class="bg-white/90 rounded-xl p-2.5 border border-amber-200 flex items-start gap-2">
+              <span class="text-red-600 font-black shrink-0">①</span>
+              <div>
+                <span class="font-extrabold text-slate-900">全年 RM 0 教材资料费：</span>
+                <span class="text-slate-600">所有主科讲义与教材全包，绝不按科加收杂费。</span>
+              </div>
+            </div>
+            <div class="bg-white/90 rounded-xl p-2.5 border border-amber-200 flex items-start gap-2">
+              <span class="text-red-600 font-black shrink-0">②</span>
+              <div>
+                <span class="font-extrabold text-slate-900">主科每堂足 90–120 分钟：</span>
+                <span class="text-slate-600">足时深度教学与堂上练习（非市面 75 分钟短课）。</span>
+              </div>
+            </div>
+            <div class="bg-white/90 rounded-xl p-2.5 border border-amber-200 flex items-start gap-2">
+              <span class="text-red-600 font-black shrink-0">③</span>
+              <div>
+                <span class="font-extrabold text-slate-900">功课班每天 &gt;2 小时不限时：</span>
+                <span class="text-slate-600">老师耐心督导到当天功课做完、真正学会为止。</span>
+              </div>
+            </div>
+            <div class="bg-white/90 rounded-xl p-2.5 border border-amber-200 flex items-start gap-2">
+              <span class="text-red-600 font-black shrink-0">④</span>
+              <div>
+                <span class="font-extrabold text-slate-900">安亲包营养午餐 + 洗澡：</span>
+                <span class="text-slate-600">校车接送按需选配（RM80起），自接送家庭立省车资。</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-8" id="coursesContainer">
+
+          <!-- 表格 1：Primary Classes (S1 - S3) -->
+          <div class="rounded-2xl overflow-hidden shadow-md border border-slate-300 bg-white">
+            <div class="bg-[#9BC2E6] px-5 py-3.5 border-b border-slate-300 flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight">
+                Primary Classes (S1 - S3)｜一至三年级课程
+              </h3>
+              <span class="bg-white/85 text-slate-900 text-xs font-extrabold px-3 py-1 rounded-full border border-slate-300">
+                ✓ 免全年教材资料费 · 每堂 90–120 分钟
+              </span>
+            </div>
+
+            <div class="grid grid-cols-12 bg-[#FFF2CC] border-b border-slate-300 text-slate-900 font-bold text-xs sm:text-sm">
+              <div class="col-span-7 px-4 py-2.5 border-r border-slate-300">Course / 课程</div>
+              <div class="col-span-3 px-2 py-2.5 border-r border-slate-300 text-center">Tuition Fees / Month</div>
+              <div class="col-span-2 px-2 py-2.5 text-center">选择 / Select</div>
+            </div>
+
+            <!-- S1-S3 选项 1: RM910 -->
+            <label class="price-row grid grid-cols-12 bg-[#EDEDED] hover:bg-slate-200/70 transition cursor-pointer border-b border-slate-300">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300">
+                <div class="inline-block bg-amber-300 text-slate-900 text-[11px] font-extrabold px-2.5 py-0.5 rounded-md mb-1.5">
+                  👑 全方位拔尖全托
+                </div>
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">
+                  全人教育 + 创<span class="text-red-600">♥</span>写作班
+                </div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5 mb-2.5">
+                  Holistic Education + Daycare + Creative Writing Class (BM, BC, ENG)
+                </div>
+                <ul class="space-y-1 text-xs sm:text-sm text-slate-800 leading-relaxed">
+                  <li>- <strong>5大完整主科</strong>：国语，英语，华语，数学，科学（每堂 90–120 分钟深度教学）</li>
+                  <li>- <strong>省心安亲 + 功课班</strong>：每天 &gt;2 小时不限时功课督导 + 安亲照护（包营养午餐、洗澡）+ 全人教育活动班</li>
+                  <li>- <strong>三语创<span class="text-red-600">❤️</span>写作班</strong>（周六专项提升课程）</li>
+                  <li class="font-bold text-red-600">- 🎁 品格教育（CBP）免费 + 免收全年 5 科教材资料费（0杂费）</li>
+                </ul>
+              </div>
+              <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                <span class="text-xl sm:text-3xl font-extrabold text-slate-900">RM 910</span>
+                <span class="text-[11px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded mt-1">一价全包</span>
+              </div>
+              <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                <input type="checkbox" name="courses"
+                  value="[S1-S3] 全人教育 + 创♥写作班 Holistic Education + Daycare + Creative Writing (RM910)"
+                  data-min="910" data-max="910"
+                  class="course-checkbox w-6 h-6 accent-red-600 cursor-pointer rounded" />
+                <span class="select-badge mt-2 px-2 py-0.5 rounded text-[11px] font-bold border border-slate-400 text-slate-700">勾选</span>
+              </div>
+            </label>
+
+            <!-- S1-S3 选项 2: RM670 -->
+            <label class="price-row grid grid-cols-12 bg-[#F7F7F7] hover:bg-slate-200/70 transition cursor-pointer border-b border-slate-300">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300">
+                <div class="inline-block bg-red-600 text-white text-[11px] font-extrabold px-2.5 py-0.5 rounded-md mb-1.5">
+                  🔥 双薪家庭首选王牌
+                </div>
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">
+                  [STD 1 - 3] 全科补习 + 功课辅导班 + 安亲班
+                </div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5 mb-2.5">
+                  Holistic Education + Daycare
+                </div>
+                <ul class="space-y-1 text-xs sm:text-sm text-slate-800 leading-relaxed">
+                  <li>- <strong>5大完整主科</strong>：国语，英语，华语，数学，科学（每堂 90–120 分钟足时讲练）</li>
+                  <li>- <strong>不限时功课辅导班</strong>：每天超过 2 小时，老师盯到孩子做完、搞懂为止</li>
+                  <li>- <strong>全包式安亲班</strong>：含营养午餐、冲凉洗澡 + 全人教育活动班</li>
+                  <li class="font-bold text-red-600">- 🎁 免费包含全年 5 科教材资料费 + 品格教育（CBP）</li>
+                </ul>
+              </div>
+              <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                <span class="text-xl sm:text-3xl font-extrabold text-slate-900">RM 670</span>
+                <span class="text-[11px] font-bold text-red-700 bg-red-100 px-2 py-0.5 rounded mt-1">超高性价比</span>
+              </div>
+              <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                <input type="checkbox" name="courses"
+                  value="[STD 1-3] 全科补习 + 功课辅导班 + 安亲班 Holistic Education + Daycare (RM670)"
+                  data-min="670" data-max="670"
+                  class="course-checkbox w-6 h-6 accent-red-600 cursor-pointer rounded" />
+                <span class="select-badge mt-2 px-2 py-0.5 rounded text-[11px] font-bold border border-slate-400 text-slate-700">勾选</span>
+              </div>
+            </label>
+
+            <!-- S1-S3 选项 3: RM570 -->
+            <label class="price-row grid grid-cols-12 bg-[#EDEDED] hover:bg-slate-200/70 transition cursor-pointer border-b border-slate-300">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300">
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">
+                  [STD 1 - 3] 全科补习 + 功课辅导班
+                </div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5 mb-2.5">
+                  Holistic Education
+                </div>
+                <ul class="space-y-1 text-xs sm:text-sm text-slate-800 leading-relaxed">
+                  <li>- <strong>5大完整主科</strong>：国语，英语，华语，数学，科学（每堂 90–120 分钟）</li>
+                  <li>- <strong>2小时+ 功课辅导班</strong>：不限时督导当天学校功课 + 全人教育活动班</li>
+                  <li class="font-bold text-red-600">- 🎁 免费包含全年 5 科教材与资料费</li>
+                </ul>
+              </div>
+              <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                <span class="text-xl sm:text-3xl font-extrabold text-slate-900">RM 570</span>
+              </div>
+              <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                <input type="checkbox" name="courses"
+                  value="[STD 1-3] 全科补习 + 功课辅导班 Holistic Education (RM570)"
+                  data-min="570" data-max="570"
+                  class="course-checkbox w-6 h-6 accent-red-600 cursor-pointer rounded" />
+                <span class="select-badge mt-2 px-2 py-0.5 rounded text-[11px] font-bold border border-slate-400 text-slate-700">勾选</span>
+              </div>
+            </label>
+
+            <!-- S1-S3 选项 4: RM450 -->
+            <label class="price-row grid grid-cols-12 bg-[#F7F7F7] hover:bg-slate-200/70 transition cursor-pointer border-b border-slate-300">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300">
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">
+                  [STD 1 - 3] 全科补习 （5大主科）
+                </div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5 mb-2.5">
+                  Holistic Education - Tuition Only
+                </div>
+                <ul class="space-y-1 text-xs sm:text-sm text-slate-800 leading-relaxed">
+                  <li>- <strong>5大完整主科</strong>：国语，英语，华语，数学，科学（自然与人类）——非拆分凑数科目</li>
+                  <li>- <strong>足时大课</strong>：每堂课 90–120 分钟，扎实打好低年级基础</li>
+                  <li class="font-bold text-red-600">- 🎁 免费包含全年 5 科教材与资料费（平均每科仅 RM 90/月）</li>
+                </ul>
+              </div>
+              <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                <span class="text-xl sm:text-3xl font-extrabold text-slate-900">RM 450</span>
+                <span class="text-[11px] font-bold text-slate-700 bg-slate-200 px-2 py-0.5 rounded mt-1">平均 RM90/科</span>
+              </div>
+              <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                <input type="checkbox" name="courses"
+                  value="[STD 1-3] 全科补习 (5大主科) Holistic Education - Tuition Only (RM450)"
+                  data-min="450" data-max="450"
+                  class="course-checkbox w-6 h-6 accent-red-600 cursor-pointer rounded" />
+                <span class="select-badge mt-2 px-2 py-0.5 rounded text-[11px] font-bold border border-slate-400 text-slate-700">勾选</span>
+              </div>
+            </label>
+
+            <!-- S1-S3 选项 5: 弹性少科组合 (3科 RM270 / 4科 RM360) -->
+            <div class="grid grid-cols-12 bg-[#EDEDED]">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300 flex flex-col justify-center">
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">
+                  [STD 1 - 3] 弹性少科组合（自选 3–4 科主科）
+                </div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5 mb-2">
+                  Flexible Subject Package (Min. 3 Subjects @ RM90/subject)
+                </div>
+                <ul class="space-y-1 text-xs sm:text-sm text-slate-800 leading-relaxed">
+                  <li>- 至少 3 科起报（RM 90/科），每堂同样足 90–120 分钟，已包全年资料费</li>
+                  <li class="text-amber-900 font-semibold">- 💡 报满 5 科直接选上方 RM 450 全科班即可</li>
+                </ul>
+              </div>
+              <div class="col-span-5 grid grid-cols-5 divide-y divide-slate-300">
+                <label class="sub-price-row col-span-5 grid grid-cols-5 hover:bg-slate-200/70 transition cursor-pointer">
+                  <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                    <span class="text-base sm:text-xl font-extrabold text-slate-900">RM 270</span>
+                    <span class="text-[10px] font-bold text-slate-700 bg-white px-2 py-0.5 rounded mt-1 border border-slate-300">自选 3 科 (RM90×3)</span>
+                  </div>
+                  <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                    <input type="checkbox" name="courses"
+                      value="[STD 1-3] 弹性少科组合 - 自选 3 科主科 (RM270)"
+                      data-min="270" data-max="270"
+                      class="course-checkbox w-5 h-5 accent-red-600 cursor-pointer rounded" />
+                    <span class="select-badge mt-1.5 px-2 py-0.5 rounded text-[10px] font-bold border border-slate-400 text-slate-700">勾选</span>
+                  </div>
+                </label>
+                <label class="sub-price-row col-span-5 grid grid-cols-5 hover:bg-slate-200/70 transition cursor-pointer">
+                  <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                    <span class="text-base sm:text-xl font-extrabold text-slate-900">RM 360</span>
+                    <span class="text-[10px] font-bold text-slate-700 bg-white px-2 py-0.5 rounded mt-1 border border-slate-300">自选 4 科 (RM90×4)</span>
+                  </div>
+                  <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                    <input type="checkbox" name="courses"
+                      value="[STD 1-3] 弹性少科组合 - 自选 4 科主科 (RM360)"
+                      data-min="360" data-max="360"
+                      class="course-checkbox w-5 h-5 accent-red-600 cursor-pointer rounded" />
+                    <span class="select-badge mt-1.5 px-2 py-0.5 rounded text-[10px] font-bold border border-slate-400 text-slate-700">勾选</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- 表格 2：Primary Classes (S4 - S6) -->
+          <div class="rounded-2xl overflow-hidden shadow-md border border-slate-300 bg-white">
+            <div class="bg-[#9BC2E6] px-5 py-3.5 border-b border-slate-300 flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight">
+                Primary Classes (S4 - S6)｜四至六年级课程
+              </h3>
+              <span class="bg-white/85 text-slate-900 text-xs font-extrabold px-3 py-1 rounded-full border border-slate-300">
+                ✓ 免全年教材资料费 · 每堂 90–120 分钟
+              </span>
+            </div>
+
+            <div class="grid grid-cols-12 bg-[#FFF2CC] border-b border-slate-300 text-slate-900 font-bold text-xs sm:text-sm">
+              <div class="col-span-7 px-4 py-2.5 border-r border-slate-300">Course / 课程</div>
+              <div class="col-span-3 px-2 py-2.5 border-r border-slate-300 text-center">Tuition Fees / Month</div>
+              <div class="col-span-2 px-2 py-2.5 text-center">选择 / Select</div>
+            </div>
+
+            <!-- S4-S6 选项 1: RM940 -->
+            <label class="price-row grid grid-cols-12 bg-[#EDEDED] hover:bg-slate-200/70 transition cursor-pointer border-b border-slate-300">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300">
+                <div class="inline-block bg-amber-300 text-slate-900 text-[11px] font-extrabold px-2.5 py-0.5 rounded-md mb-1.5">
+                  👑 全方位拔尖全托
+                </div>
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">
+                  全人教育 + 创<span class="text-red-600">♥</span>写作班
+                </div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5 mb-2.5">
+                  Holistic Education + Daycare + Creative Writing Class (BM, BC, ENG)
+                </div>
+                <ul class="space-y-1 text-xs sm:text-sm text-slate-800 leading-relaxed">
+                  <li>- <strong>6大完整主科</strong>：国语，英语，华语，数学，科学，历史（每堂 90–120 分钟深度教学）</li>
+                  <li>- <strong>省心安亲 + 功课班</strong>：每天 &gt;2 小时不限时功课督导 + 安亲照护（包营养午餐、洗澡）+ 全人教育活动班</li>
+                  <li>- <strong>三语创<span class="text-red-600">❤️</span>写作班</strong>（周六专项提升课程）</li>
+                  <li class="font-bold text-red-600">- 🎁 品格教育（CBP）免费 + 免收全年 6 科教材资料费（0杂费）</li>
+                </ul>
+              </div>
+              <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                <span class="text-xl sm:text-3xl font-extrabold text-slate-900">RM 940</span>
+                <span class="text-[11px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded mt-1">一价全包</span>
+              </div>
+              <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                <input type="checkbox" name="courses"
+                  value="[S4-S6] 全人教育 + 创♥写作班 Holistic Education + Daycare + Creative Writing (RM940)"
+                  data-min="940" data-max="940"
+                  class="course-checkbox w-6 h-6 accent-red-600 cursor-pointer rounded" />
+                <span class="select-badge mt-2 px-2 py-0.5 rounded text-[11px] font-bold border border-slate-400 text-slate-700">勾选</span>
+              </div>
+            </label>
+
+            <!-- S4-S6 选项 2: RM700 -->
+            <label class="price-row grid grid-cols-12 bg-[#F7F7F7] hover:bg-slate-200/70 transition cursor-pointer border-b border-slate-300">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300">
+                <div class="inline-block bg-red-600 text-white text-[11px] font-extrabold px-2.5 py-0.5 rounded-md mb-1.5">
+                  🔥 双薪家庭首选王牌
+                </div>
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">
+                  [STD 4 - 6] 全科补习 + 功课辅导班 + 安亲班
+                </div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5 mb-2.5">
+                  Holistic Education + Daycare
+                </div>
+                <ul class="space-y-1 text-xs sm:text-sm text-slate-800 leading-relaxed">
+                  <li>- <strong>6大完整主科</strong>：国语，英语，华语，数学，科学，历史（每堂 90–120 分钟足时讲练）</li>
+                  <li>- <strong>不限时功课辅导班</strong>：每天超过 2 小时，老师盯到孩子做完、搞懂为止</li>
+                  <li>- <strong>全包式安亲班</strong>：含营养午餐、冲凉洗澡 + 全人教育活动班</li>
+                  <li class="font-bold text-red-600">- 🎁 免费包含全年 6 科教材资料费 + 品格教育（CBP）</li>
+                </ul>
+              </div>
+              <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                <span class="text-xl sm:text-3xl font-extrabold text-slate-900">RM 700</span>
+                <span class="text-[11px] font-bold text-red-700 bg-red-100 px-2 py-0.5 rounded mt-1">超高性价比</span>
+              </div>
+              <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                <input type="checkbox" name="courses"
+                  value="[STD 4-6] 全科补习 + 功课辅导班 + 安亲班 Holistic Education + Daycare (RM700)"
+                  data-min="700" data-max="700"
+                  class="course-checkbox w-6 h-6 accent-red-600 cursor-pointer rounded" />
+                <span class="select-badge mt-2 px-2 py-0.5 rounded text-[11px] font-bold border border-slate-400 text-slate-700">勾选</span>
+              </div>
+            </label>
+
+            <!-- S4-S6 选项 3: RM600 -->
+            <label class="price-row grid grid-cols-12 bg-[#EDEDED] hover:bg-slate-200/70 transition cursor-pointer border-b border-slate-300">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300">
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">
+                  [STD 4 - 6] 全科补习 + 功课辅导班
+                </div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5 mb-2.5">
+                  Holistic Education
+                </div>
+                <ul class="space-y-1 text-xs sm:text-sm text-slate-800 leading-relaxed">
+                  <li>- <strong>6大完整主科</strong>：国语，英语，华语，数学，科学，历史（每堂 90–120 分钟）</li>
+                  <li>- <strong>2小时+ 功课辅导班</strong>：不限时督导当天学校功课 + 全人教育活动班</li>
+                  <li class="font-bold text-red-600">- 🎁 免费包含全年 6 科教材与资料费</li>
+                </ul>
+              </div>
+              <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                <span class="text-xl sm:text-3xl font-extrabold text-slate-900">RM 600</span>
+              </div>
+              <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                <input type="checkbox" name="courses"
+                  value="[STD 4-6] 全科补习 + 功课辅导班 Holistic Education (RM600)"
+                  data-min="600" data-max="600"
+                  class="course-checkbox w-6 h-6 accent-red-600 cursor-pointer rounded" />
+                <span class="select-badge mt-2 px-2 py-0.5 rounded text-[11px] font-bold border border-slate-400 text-slate-700">勾选</span>
+              </div>
+            </label>
+
+            <!-- S4-S6 选项 4: RM480 -->
+            <label class="price-row grid grid-cols-12 bg-[#F7F7F7] hover:bg-slate-200/70 transition cursor-pointer border-b border-slate-300">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300">
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">
+                  [STD 4 - 6] 全科补习 （6大主科）
+                </div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5 mb-2.5">
+                  Holistic Education - Tuition Only
+                </div>
+                <ul class="space-y-1 text-xs sm:text-sm text-slate-800 leading-relaxed">
+                  <li>- <strong>6大完整主科</strong>：国语，英语，华语，数学，科学，历史（一科不落，非拆分凑数科目）</li>
+                  <li>- <strong>足时大课</strong>：每堂课 90–120 分钟，扎实覆盖校内考试与高阶思维</li>
+                  <li class="font-bold text-red-600">- 🎁 免费包含全年 6 科教材与资料费（平均每科仅 RM 80/月！）</li>
+                </ul>
+              </div>
+              <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                <span class="text-xl sm:text-3xl font-extrabold text-slate-900">RM 480</span>
+                <span class="text-[11px] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded mt-1">平均 RM80/科</span>
+              </div>
+              <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                <input type="checkbox" name="courses"
+                  value="[STD 4-6] 全科补习 (6大主科) Holistic Education - Tuition Only (RM480)"
+                  data-min="480" data-max="480"
+                  class="course-checkbox w-6 h-6 accent-red-600 cursor-pointer rounded" />
+                <span class="select-badge mt-2 px-2 py-0.5 rounded text-[11px] font-bold border border-slate-400 text-slate-700">勾选</span>
+              </div>
+            </label>
+
+            <!-- S4-S6 选项 5: 弹性少科组合 (3科 RM270 / 4科 RM360) -->
+            <div class="grid grid-cols-12 bg-[#EDEDED]">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300 flex flex-col justify-center">
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">
+                  [STD 4 - 6] 弹性少科组合（自选 3–4 科主科）
+                </div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5 mb-2">
+                  Flexible Subject Package (Min. 3 Subjects @ RM90/subject)
+                </div>
+                <ul class="space-y-1 text-xs sm:text-sm text-slate-800 leading-relaxed">
+                  <li>- 至少 3 科起报（RM 90/科），每堂同样足 90–120 分钟，已包全年资料费</li>
+                  <li class="text-red-700 font-bold">- 💡 报满 6 科直接享上方全科特惠价 RM 480（立省 RM 60/月）！</li>
+                </ul>
+              </div>
+              <div class="col-span-5 grid grid-cols-5 divide-y divide-slate-300">
+                <label class="sub-price-row col-span-5 grid grid-cols-5 hover:bg-slate-200/70 transition cursor-pointer">
+                  <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                    <span class="text-base sm:text-xl font-extrabold text-slate-900">RM 270</span>
+                    <span class="text-[10px] font-bold text-slate-700 bg-white px-2 py-0.5 rounded mt-1 border border-slate-300">自选 3 科 (RM90×3)</span>
+                  </div>
+                  <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                    <input type="checkbox" name="courses"
+                      value="[STD 4-6] 弹性少科组合 - 自选 3 科主科 (RM270)"
+                      data-min="270" data-max="270"
+                      class="course-checkbox w-5 h-5 accent-red-600 cursor-pointer rounded" />
+                    <span class="select-badge mt-1.5 px-2 py-0.5 rounded text-[10px] font-bold border border-slate-400 text-slate-700">勾选</span>
+                  </div>
+                </label>
+                <label class="sub-price-row col-span-5 grid grid-cols-5 hover:bg-slate-200/70 transition cursor-pointer">
+                  <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                    <span class="text-base sm:text-xl font-extrabold text-slate-900">RM 360</span>
+                    <span class="text-[10px] font-bold text-slate-700 bg-white px-2 py-0.5 rounded mt-1 border border-slate-300">自选 4 科 (RM90×4)</span>
+                  </div>
+                  <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                    <input type="checkbox" name="courses"
+                      value="[STD 4-6] 弹性少科组合 - 自选 4 科主科 (RM360)"
+                      data-min="360" data-max="360"
+                      class="course-checkbox w-5 h-5 accent-red-600 cursor-pointer rounded" />
+                    <span class="select-badge mt-1.5 px-2 py-0.5 rounded text-[10px] font-bold border border-slate-400 text-slate-700">勾选</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- 表格 3：Enrichment & Pre-Primary -->
+          <div class="rounded-2xl overflow-hidden shadow-md border border-slate-300 bg-white">
+            <div class="bg-[#9BC2E6] px-5 py-3.5 border-b border-slate-300">
+              <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight">
+                Enrichment & Pre-Primary｜专项提升、幼小衔接与才艺
+              </h3>
+            </div>
+
+            <div class="grid grid-cols-12 bg-[#FFF2CC] border-b border-slate-300 text-slate-900 font-bold text-xs sm:text-sm">
+              <div class="col-span-7 px-4 py-2.5 border-r border-slate-300">Course / 课程</div>
+              <div class="col-span-3 px-2 py-2.5 border-r border-slate-300 text-center">Tuition Fees / Month</div>
+              <div class="col-span-2 px-2 py-2.5 text-center">选择 / Select</div>
+            </div>
+
+            <!-- 1. 创❤三语写作班 (Existing LK vs Non LK) -->
+            <div class="grid grid-cols-12 bg-[#EDEDED] border-b border-slate-300">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300 flex flex-col justify-center">
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">
+                  创<span class="text-red-600">❤</span>三语写作班
+                </div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5 mb-2">
+                  Creative Writing Class
+                </div>
+                <ul class="space-y-1 text-xs sm:text-sm text-slate-800">
+                  <li>- 需进行入学程度评估（Need assessment）</li>
+                </ul>
+              </div>
+              <div class="col-span-5 grid grid-cols-5 divide-y divide-slate-300">
+                <label class="sub-price-row col-span-5 grid grid-cols-5 hover:bg-slate-200/70 transition cursor-pointer">
+                  <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                    <span class="text-sm sm:text-lg font-extrabold text-slate-900">RM 95 – RM 240</span>
+                    <span class="text-[10px] font-bold text-red-700 bg-red-100 px-2 py-0.5 rounded mt-1">Existing LK Student</span>
+                  </div>
+                  <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                    <input type="checkbox" name="courses"
+                      value="创❤三语写作班 Creative Writing Class - Existing LK Student (RM95-RM240)"
+                      data-min="95" data-max="240"
+                      class="course-checkbox w-5 h-5 accent-red-600 cursor-pointer rounded" />
+                    <span class="select-badge mt-1.5 px-2 py-0.5 rounded text-[10px] font-bold border border-slate-400 text-slate-700">勾选</span>
+                  </div>
+                </label>
+                <label class="sub-price-row col-span-5 grid grid-cols-5 hover:bg-slate-200/70 transition cursor-pointer">
+                  <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                    <span class="text-sm sm:text-lg font-extrabold text-slate-900">RM 100 – RM 270</span>
+                    <span class="text-[10px] font-bold text-slate-700 bg-slate-200 px-2 py-0.5 rounded mt-1">Non LK Student</span>
+                  </div>
+                  <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                    <input type="checkbox" name="courses"
+                      value="创❤三语写作班 Creative Writing Class - Non LK Student (RM100-RM270)"
+                      data-min="100" data-max="270"
+                      class="course-checkbox w-5 h-5 accent-red-600 cursor-pointer rounded" />
+                    <span class="select-badge mt-1.5 px-2 py-0.5 rounded text-[10px] font-bold border border-slate-400 text-slate-700">勾选</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- 2. 数学巩固班 (RM95) -->
+            <label class="price-row grid grid-cols-12 bg-[#F7F7F7] hover:bg-slate-200/70 transition cursor-pointer border-b border-slate-300">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300">
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">数学巩固班</div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5">Math Enhance class</div>
+              </div>
+              <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                <span class="text-xl sm:text-3xl font-extrabold text-slate-900">RM 95</span>
+              </div>
+              <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                <input type="checkbox" name="courses"
+                  value="数学巩固班 Math Enhance class (RM95)"
+                  data-min="95" data-max="95"
+                  class="course-checkbox w-6 h-6 accent-red-600 cursor-pointer rounded" />
+                <span class="select-badge mt-2 px-2 py-0.5 rounded text-[11px] font-bold border border-slate-400 text-slate-700">勾选</span>
+              </div>
+            </label>
+
+            <!-- 3. 马来文加强班 (RM110) -->
+            <label class="price-row grid grid-cols-12 bg-[#EDEDED] hover:bg-slate-200/70 transition cursor-pointer border-b border-slate-300">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300">
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">马来文加强班</div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5 mb-2">BM Enhance Class</div>
+                <ul class="space-y-1 text-xs sm:text-sm text-slate-800">
+                  <li>- 根据学生实际程度分班指导</li>
+                </ul>
+              </div>
+              <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                <span class="text-xl sm:text-3xl font-extrabold text-slate-900">RM 110</span>
+              </div>
+              <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                <input type="checkbox" name="courses"
+                  value="马来文加强班 BM Enhance Class (RM110)"
+                  data-min="110" data-max="110"
+                  class="course-checkbox w-6 h-6 accent-red-600 cursor-pointer rounded" />
+                <span class="select-badge mt-2 px-2 py-0.5 rounded text-[11px] font-bold border border-slate-400 text-slate-700">勾选</span>
+              </div>
+            </label>
+
+            <!-- 4. 品格教育课程 CBP (RM60 vs RM100) -->
+            <div class="grid grid-cols-12 bg-[#F7F7F7] border-b border-slate-300">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300 flex flex-col justify-center">
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">品格教育课程（Year 2027）</div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5">Character Building Program (CBP)</div>
+              </div>
+              <div class="col-span-5 grid grid-cols-5 divide-y divide-slate-300">
+                <label class="sub-price-row col-span-5 grid grid-cols-5 hover:bg-slate-200/70 transition cursor-pointer">
+                  <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                    <span class="text-lg sm:text-2xl font-extrabold text-slate-900">RM 60</span>
+                    <span class="text-[10px] font-bold text-red-700 bg-red-100 px-2 py-0.5 rounded mt-1">Existing LK Student</span>
+                  </div>
+                  <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                    <input type="checkbox" name="courses"
+                      value="品格教育课程 Character Building Program (CBP) - Existing LK Student (RM60)"
+                      data-min="60" data-max="60"
+                      class="course-checkbox w-5 h-5 accent-red-600 cursor-pointer rounded" />
+                    <span class="select-badge mt-1.5 px-2 py-0.5 rounded text-[10px] font-bold border border-slate-400 text-slate-700">勾选</span>
+                  </div>
+                </label>
+                <label class="sub-price-row col-span-5 grid grid-cols-5 hover:bg-slate-200/70 transition cursor-pointer">
+                  <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                    <span class="text-lg sm:text-2xl font-extrabold text-slate-900">RM 100</span>
+                    <span class="text-[10px] font-bold text-slate-700 bg-slate-200 px-2 py-0.5 rounded mt-1">Non LK Student</span>
+                  </div>
+                  <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                    <input type="checkbox" name="courses"
+                      value="品格教育课程 Character Building Program (CBP) - Non LK Student (RM100)"
+                      data-min="100" data-max="100"
+                      class="course-checkbox w-5 h-5 accent-red-600 cursor-pointer rounded" />
+                    <span class="select-badge mt-1.5 px-2 py-0.5 rounded text-[10px] font-bold border border-slate-400 text-slate-700">勾选</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- 5. 升小一课程（按月付费 RM168） -->
+            <label class="price-row grid grid-cols-12 bg-[#EDEDED] hover:bg-slate-200/70 transition cursor-pointer border-b border-slate-300">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300">
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">升小一课程（按月付费）</div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5">Pre-Primary One Course (Monthly Payment)</div>
+              </div>
+              <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                <span class="text-xl sm:text-3xl font-extrabold text-slate-900">RM 168</span>
+              </div>
+              <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                <input type="checkbox" name="courses"
+                  value="升小一课程 Pre-Primary One Course (Monthly RM168)"
+                  data-min="168" data-max="168"
+                  class="course-checkbox w-6 h-6 accent-red-600 cursor-pointer rounded" />
+                <span class="select-badge mt-2 px-2 py-0.5 rounded text-[11px] font-bold border border-slate-400 text-slate-700">勾选</span>
+              </div>
+            </label>
+
+            <!-- 6. 升小一课程（4个月全期优惠 RM638） -->
+            <label class="price-row grid grid-cols-12 bg-[#F7F7F7] hover:bg-slate-200/70 transition cursor-pointer border-b border-slate-300">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300">
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">升小一课程（4个月全期优惠）</div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5">Pre-Primary One Course (Full 4 Months Payment)</div>
+              </div>
+              <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                <span class="text-xl sm:text-3xl font-extrabold text-slate-900">RM 638</span>
+              </div>
+              <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                <input type="checkbox" name="courses"
+                  value="升小一课程 Pre-Primary One Course (Full 4 Months RM638)"
+                  data-min="638" data-max="638"
+                  class="course-checkbox w-6 h-6 accent-red-600 cursor-pointer rounded" />
+                <span class="select-badge mt-2 px-2 py-0.5 rounded text-[11px] font-bold border border-slate-400 text-slate-700">勾选</span>
+              </div>
+            </label>
+
+            <!-- 7. 钢琴音乐班 (RM140+) -->
+            <label class="price-row grid grid-cols-12 bg-[#EDEDED] hover:bg-slate-200/70 transition cursor-pointer border-b border-slate-300">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300">
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">钢琴音乐班（根据等级）</div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5">Piano & Music Class (By Grade)</div>
+              </div>
+              <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                <span class="text-xl sm:text-2xl font-extrabold text-slate-900">RM 140 起</span>
+              </div>
+              <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                <input type="checkbox" name="courses"
+                  value="钢琴音乐班 (从RM140开始)"
+                  data-min="140" data-max="140" data-plus="true"
+                  class="course-checkbox w-6 h-6 accent-red-600 cursor-pointer rounded" />
+                <span class="select-badge mt-2 px-2 py-0.5 rounded text-[11px] font-bold border border-slate-400 text-slate-700">勾选</span>
+              </div>
+            </label>
+
+            <!-- 8. STREAM 假期活动班 (RM599) -->
+            <label class="price-row grid grid-cols-12 bg-[#F7F7F7] hover:bg-slate-200/70 transition cursor-pointer">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300">
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">STREAM HOLIDAY PROGRAMME 假期活动班 + 安亲班</div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5">** For non LK student</div>
+              </div>
+              <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                <span class="text-xl sm:text-3xl font-extrabold text-slate-900">RM 599</span>
+              </div>
+              <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                <input type="checkbox" name="courses"
+                  value="STREAM HOLIDAY PROGRAMME 假期活动班 + 安亲班 (RM599)"
+                  data-min="599" data-max="599"
+                  class="course-checkbox w-6 h-6 accent-red-600 cursor-pointer rounded" />
+                <span class="select-badge mt-2 px-2 py-0.5 rounded text-[11px] font-bold border border-slate-400 text-slate-700">勾选</span>
+              </div>
+            </label>
+          </div>
+
+          <!-- 表格 4：Daycare & Transportation -->
+          <div class="rounded-2xl overflow-hidden shadow-md border border-slate-300 bg-white">
+            <div class="bg-[#9BC2E6] px-5 py-3.5 border-b border-slate-300">
+              <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight">
+                Daycare & Transportation｜安亲膳食,功课班与校车接送
+              </h3>
+            </div>
+
+            <div class="grid grid-cols-12 bg-[#FFF2CC] border-b border-slate-300 text-slate-900 font-bold text-xs sm:text-sm">
+              <div class="col-span-7 px-4 py-2.5 border-r border-slate-300">Service / 服务项目</div>
+              <div class="col-span-3 px-2 py-2.5 border-r border-slate-300 text-center">Fees / Month</div>
+              <div class="col-span-2 px-2 py-2.5 text-center">选择 / Select</div>
+            </div>
+
+            <!-- 1. 安亲班+功课班 (RM400) -->
+            <label class="price-row grid grid-cols-12 bg-[#EDEDED] hover:bg-slate-200/70 transition cursor-pointer border-b border-slate-300">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300">
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">安亲班+功课班</div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5 mb-1.5">Daycare + Homework Class</div>
+                <ul class="space-y-1 text-xs sm:text-sm text-slate-800">
+                  <li>- 含营养午餐、冲凉洗澡 + 每天 &gt;2 小时不限时功课辅导班</li>
+                </ul>
+              </div>
+              <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                <span class="text-xl sm:text-3xl font-extrabold text-slate-900">RM 400</span>
+              </div>
+              <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                <input type="checkbox" name="courses"
+                  value="安亲班+功课班 Daycare+homework class (RM400)"
+                  data-min="400" data-max="400"
+                  class="course-checkbox w-6 h-6 accent-red-600 cursor-pointer rounded" />
+                <span class="select-badge mt-2 px-2 py-0.5 rounded text-[11px] font-bold border border-slate-400 text-slate-700">勾选</span>
+              </div>
+            </label>
+
+            <!-- 2. 康乐小学单程 (RM80) -->
+            <label class="price-row grid grid-cols-12 bg-[#F7F7F7] hover:bg-slate-200/70 transition cursor-pointer border-b border-slate-300">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300">
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">校车接送（一年级-六年级 - 康乐小学单程）</div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5 mb-1">Connaught 1 way (按需选配，自行接送家庭免付车资)</div>
+              </div>
+              <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                <span class="text-xl sm:text-3xl font-extrabold text-slate-900">RM 80</span>
+              </div>
+              <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                <input type="checkbox" name="courses"
+                  value="校车接送 (一年级-六年级 - 康乐小学单程) Connaught 1 way (RM80)"
+                  data-min="80" data-max="80"
+                  class="course-checkbox w-6 h-6 accent-red-600 cursor-pointer rounded" />
+                <span class="select-badge mt-2 px-2 py-0.5 rounded text-[11px] font-bold border border-slate-400 text-slate-700">勾选</span>
+              </div>
+            </label>
+
+            <!-- 3. 康乐小学双程 (RM120) -->
+            <label class="price-row grid grid-cols-12 bg-[#EDEDED] hover:bg-slate-200/70 transition cursor-pointer border-b border-slate-300">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300">
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">校车接送（一年级-二年级 - 康乐小学双程）</div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5">Connaught 2 way</div>
+              </div>
+              <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                <span class="text-xl sm:text-3xl font-extrabold text-slate-900">RM 120</span>
+              </div>
+              <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                <input type="checkbox" name="courses"
+                  value="校车接送 (一年级-二年级 - 康乐小学双程) Connaught 2 way (RM120)"
+                  data-min="120" data-max="120"
+                  class="course-checkbox w-6 h-6 accent-red-600 cursor-pointer rounded" />
+                <span class="select-badge mt-2 px-2 py-0.5 rounded text-[11px] font-bold border border-slate-400 text-slate-700">勾选</span>
+              </div>
+            </label>
+
+            <!-- 4. 燕美小学单程 (RM85-RM100) -->
+            <label class="price-row grid grid-cols-12 bg-[#F7F7F7] hover:bg-slate-200/70 transition cursor-pointer border-b border-slate-300">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300">
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">校车接送（一年级-六年级 - 燕美小学单程 - 1PM）</div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5">Imbi 1 way 1PM</div>
+              </div>
+              <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                <span class="text-lg sm:text-2xl font-extrabold text-slate-900">RM 85 – 100</span>
+              </div>
+              <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                <input type="checkbox" name="courses"
+                  value="校车接送 (一年级-六年级 - 燕美小学单程 - 1PM) Imbi 1 way 1PM (RM85-RM100)"
+                  data-min="85" data-max="100"
+                  class="course-checkbox w-6 h-6 accent-red-600 cursor-pointer rounded" />
+                <span class="select-badge mt-2 px-2 py-0.5 rounded text-[11px] font-bold border border-slate-400 text-slate-700">勾选</span>
+              </div>
+            </label>
+
+            <!-- 5. 私家车接送 (RM150+) -->
+            <label class="price-row grid grid-cols-12 bg-[#EDEDED] hover:bg-slate-200/70 transition cursor-pointer border-b border-slate-300">
+              <div class="col-span-7 p-4 sm:p-5 border-r border-slate-300">
+                <div class="text-base sm:text-lg font-extrabold text-slate-900">私家车接送</div>
+                <div class="text-xs sm:text-sm font-medium text-slate-700 mt-0.5">Private Car Transportation - RM150 onward by request</div>
+              </div>
+              <div class="col-span-3 p-3 border-r border-slate-300 flex flex-col items-center justify-center text-center">
+                <span class="text-xl sm:text-2xl font-extrabold text-slate-900">RM 150 起</span>
+              </div>
+              <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                <input type="checkbox" name="courses"
+                  value="私家车接送 Private Car Transportation - RM150 onward by request"
+                  data-min="150" data-max="150" data-plus="true"
+                  class="course-checkbox w-6 h-6 accent-red-600 cursor-pointer rounded" />
+                <span class="select-badge mt-2 px-2 py-0.5 rounded text-[11px] font-bold border border-slate-400 text-slate-700">勾选</span>
+              </div>
+            </label>
+
+            <!-- 6. Other 自定义选项 -->
+            <div class="price-row grid grid-cols-12 bg-[#F7F7F7] transition">
+              <div class="col-span-10 p-4 sm:p-5 border-r border-slate-300">
+                <label for="courseOtherCheck" class="text-base font-extrabold text-slate-900 cursor-pointer block">
+                  其他课程或接送需求｜Other:
+                </label>
+                <input type="text" id="courseOtherText" placeholder="请在此注明其他需求 Please specify..."
+                  class="mt-2 w-full px-3.5 py-2 rounded-xl bg-white border border-slate-300 text-sm outline-none focus:border-red-600" />
+              </div>
+              <div class="col-span-2 p-2 flex flex-col items-center justify-center">
+                <input type="checkbox" id="courseOtherCheck" data-min="0" data-max="0"
+                  class="course-checkbox w-6 h-6 accent-red-600 cursor-pointer rounded" />
+                <span class="select-badge mt-2 px-2 py-0.5 rounded text-[11px] font-bold border border-slate-400 text-slate-700">勾选</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 固定式学费结算卡片 -->
+          <div class="rounded-2xl bg-gradient-to-r from-red-600 via-red-500 to-orange-500 text-white p-5 sm:p-6 shadow-md">
+            <div class="text-xs font-extrabold uppercase tracking-wider text-amber-200 mb-3">
+              📊 您的学费结算预览｜Tuition Fee Summary
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="bg-white/15 backdrop-blur-xs rounded-xl p-4 border border-white/25">
+                <span class="text-xs text-amber-100 font-semibold block">首月总付费（含一次性报名费 RM90 赠 LK T-shirt）</span>
+                <span id="inlineFirstMonth" class="text-2xl sm:text-3xl font-black text-amber-300 mt-1 block">RM 90</span>
+              </div>
+              <div class="bg-white/15 backdrop-blur-xs rounded-xl p-4 border border-white/25">
+                <span class="text-xs text-white font-semibold block">第 2 个月开始每月总付费（已移除 RM90 报名费）</span>
+                <span id="inlineSubMonth" class="text-2xl sm:text-3xl font-black text-white mt-1 block">RM 0</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 加入月份 -->
+          <div class="bg-amber-50/80 p-5 rounded-2xl border-2 border-amber-200">
+            <label class="block text-sm font-extrabold text-slate-900 mb-1.5">
+              🗓️ 加入月份｜Joining Month <span class="text-red-600">*</span>
+              <span class="block text-xs font-normal text-slate-600 mt-0.5">请填写您希望孩子开始上课的月份（例如：2026年11月 / 2027年1月）</span>
+            </label>
+            <input type="text" name="joiningMonth" data-label="加入月份 Joining Month" required placeholder="例如：2026年11月 / 2027年1月 (Nov 2026 / Jan 2027)"
+              class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 focus:border-red-600 outline-none text-sm font-medium" />
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= STEP 2: 学生基本资料 ================= -->
+      <section class="step-section" data-step="2">
+        <div class="border-b-2 border-amber-100 pb-4 mb-6">
+          <div class="inline-block bg-red-100 text-red-700 text-xs font-extrabold px-3 py-1 rounded-full mb-2">
+            STEP 2 · 填写学生资料
+          </div>
+          <h2 class="text-lg sm:text-xl font-extrabold text-slate-900 flex items-center gap-2">
+            <span class="w-2 h-6 bg-red-600 rounded-full inline-block"></span>
+            学生基本资料｜Student Particulars
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">请填写与报生纸或 MyKid 一致的学生资料（带 <span class="text-red-600 font-bold">*</span> 为必填项）。</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div>
+            <label class="block text-sm font-bold text-slate-800 mb-1">
+              01. 学生中文姓名 <span class="text-red-600">*</span>
+              <span class="block text-xs font-normal text-slate-500">Chinese Name（若无可填 N/A）</span>
+            </label>
+            <input type="text" name="chineseName" data-label="01. 学生中文姓名" required placeholder="例如：陈小明"
+              class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-red-600 focus:ring-2 focus:ring-red-600/15 outline-none transition text-sm" />
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-slate-800 mb-1">
+              02. 学生英文全名 <span class="text-red-600">*</span>
+              <span class="block text-xs font-normal text-slate-500">Student's English Name (As per MyKid)</span>
+            </label>
+            <input type="text" name="englishName" data-label="02. 学生英文全名" required placeholder="e.g., Tan Xiao Ming"
+              class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-red-600 focus:ring-2 focus:ring-red-600/15 outline-none transition text-sm" />
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-slate-800 mb-1">
+              03. 性别 <span class="text-red-600">*</span>
+              <span class="block text-xs font-normal text-slate-500">Gender</span>
+            </label>
+            <div class="grid grid-cols-2 gap-3 pt-1" id="genderGroup">
+              <label class="option-card flex items-center justify-center gap-2 p-2.5 rounded-xl border border-slate-300 cursor-pointer transition text-sm font-semibold">
+                <input type="radio" name="gender" data-label="03. 性别 Gender" value="女 / Female" required class="accent-red-600" />
+                <span>👧 女 / Female</span>
+              </label>
+              <label class="option-card flex items-center justify-center gap-2 p-2.5 rounded-xl border border-slate-300 cursor-pointer transition text-sm font-semibold">
+                <input type="radio" name="gender" data-label="03. 性别 Gender" value="男 / Male" required class="accent-red-600" />
+                <span>👦 男 / Male</span>
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-slate-800 mb-1">
+              04. 年龄 <span class="text-red-600">*</span>
+              <span class="block text-xs font-normal text-slate-500">Age</span>
+            </label>
+            <input type="text" name="age" data-label="04. 年龄 Age" required placeholder="例如：7 岁 / 7 years old"
+              class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-red-600 focus:ring-2 focus:ring-red-600/15 outline-none transition text-sm" />
+          </div>
+
+          <div class="sm:col-span-2">
+            <label class="block text-sm font-bold text-slate-800 mb-1">
+              05. 学生 MyKid Card 号码 <span class="text-red-600">*</span>
+              <span class="block text-xs font-normal text-slate-500">Student's MyKid Card Number</span>
+            </label>
+            <input type="text" name="mykid" data-label="05. 学生 MyKid Card 号码" required placeholder="例如：190101-14-XXXX"
+              class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-red-600 focus:ring-2 focus:ring-red-600/15 outline-none transition text-sm" />
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-slate-800 mb-1">
+              06. 就读学校 <span class="text-red-600">*</span>
+              <span class="block text-xs font-normal text-slate-500">School</span>
+            </label>
+            <input type="text" name="school" data-label="06. 就读学校 School" required placeholder="例如：康乐小学 / 燕美小学 / 州立小学"
+              class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-red-600 focus:ring-2 focus:ring-red-600/15 outline-none transition text-sm" />
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-slate-800 mb-1">
+              07. 2026 班级 / Year 2027 - Std 1 <span class="text-red-600">*</span>
+              <span class="block text-xs font-normal text-slate-500">2026 Class / Year 2027 - Std 1</span>
+            </label>
+            <input type="text" name="studentClass" data-label="07. 2026 班级 / Year 2027 - Std 1" required placeholder="例如：2026 2M 或 2027 Std 1"
+              class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-red-600 focus:ring-2 focus:ring-red-600/15 outline-none transition text-sm" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STEP 3: 家长联络与接送资料 ================= -->
+      <section class="step-section" data-step="3">
+        <div class="border-b-2 border-amber-100 pb-4 mb-6">
+          <div class="inline-block bg-red-100 text-red-700 text-xs font-extrabold px-3 py-1 rounded-full mb-2">
+            STEP 3 · 家长联络与接送安全
+          </div>
+          <h2 class="text-lg sm:text-xl font-extrabold text-slate-900 flex items-center gap-2">
+            <span class="w-2 h-6 bg-red-600 rounded-full inline-block"></span>
+            家长联络与接送安全｜Parent & Pick-up Details
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">请提供两位家长或监护人的联系方式，以保障紧急联络与接送安全。</p>
+        </div>
+
+        <div class="bg-amber-50/60 p-4 rounded-xl border border-amber-200 mb-5">
+          <h3 class="text-xs font-extrabold uppercase tracking-wider text-red-600 mb-3">第一家长 / 监护人 Primary Parent / Guardian</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div>
+              <label class="block text-sm font-bold text-slate-800 mb-1">
+                08. 家长/监护人姓名 <span class="text-red-600">*</span>
+                <span class="block text-xs font-normal text-slate-500">Parent's / Guardian's Name</span>
+              </label>
+              <input type="text" name="parent1Name" data-label="08. 第一家长/监护人姓名" required placeholder="Full Name"
+                class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 focus:border-red-600 outline-none text-sm" />
+            </div>
+            <div>
+              <label class="block text-sm font-bold text-slate-800 mb-1">
+                09. 家长电话号码 <span class="text-red-600">*</span>
+                <span class="block text-xs font-normal text-slate-500">Parent's Phone Number</span>
+              </label>
+              <input type="tel" name="parent1Phone" data-label="09. 第一家长电话号码" required placeholder="e.g., 012-3456789"
+                class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 focus:border-red-600 outline-none text-sm" />
+            </div>
+            <div>
+              <label class="block text-sm font-bold text-slate-800 mb-1">
+                10. 与学生关系 <span class="text-red-600">*</span>
+                <span class="block text-xs font-normal text-slate-500">Relationship</span>
+              </label>
+              <input type="text" name="parent1Relation" data-label="10. 第一家长与学生关系" required placeholder="例如：母亲 Mother"
+                class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 focus:border-red-600 outline-none text-sm" />
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-sky-50/60 p-4 rounded-xl border border-sky-200 mb-5">
+          <h3 class="text-xs font-extrabold uppercase tracking-wider text-sky-800 mb-3">第二家长 / 监护人 Second Parent / Guardian</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div>
+              <label class="block text-sm font-bold text-slate-800 mb-1">
+                11. 第二家长/监护人名字 <span class="text-red-600">*</span>
+                <span class="block text-xs font-normal text-slate-500">Second Parent's / Guardian's Name</span>
+              </label>
+              <input type="text" name="parent2Name" data-label="11. 第二家长/监护人名字" required placeholder="Full Name"
+                class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 focus:border-red-600 outline-none text-sm" />
+            </div>
+            <div>
+              <label class="block text-sm font-bold text-slate-800 mb-1">
+                12. 手机号码 <span class="text-red-600">*</span>
+                <span class="block text-xs font-normal text-slate-500">Mobile Phone Number</span>
+              </label>
+              <input type="tel" name="parent2Phone" data-label="12. 第二家长手机号码" required placeholder="e.g., 012-9876543"
+                class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 focus:border-red-600 outline-none text-sm" />
+            </div>
+            <div>
+              <label class="block text-sm font-bold text-slate-800 mb-1">
+                13. 与学生关系 <span class="text-red-600">*</span>
+                <span class="block text-xs font-normal text-slate-500">Relationship</span>
+              </label>
+              <input type="text" name="parent2Relation" data-label="13. 第二家长与学生关系" required placeholder="例如：父亲 Father"
+                class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 focus:border-red-600 outline-none text-sm" />
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <div>
+            <label class="block text-sm font-bold text-slate-800 mb-1">
+              14. 住家地址 <span class="text-red-600">*</span>
+              <span class="block text-xs font-normal text-slate-500">Home Address</span>
+            </label>
+            <textarea name="address" data-label="14. 住家地址 Home Address" rows="2" required placeholder="请填写完整居住地址 Full residential address"
+              class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-red-600 outline-none text-sm"></textarea>
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-slate-800 mb-1">
+              15. 接送学生车辆车牌（从中心回家）<span class="text-xs font-normal text-slate-400">（选填 Optional）</span>
+              <span class="block text-xs font-normal text-slate-500">For Who Applicable: Car Plate Number - Center to home</span>
+            </label>
+            <input type="text" name="carPlate" placeholder="例如：WXX 1234 / VXX 8888"
+              class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-red-600 outline-none text-sm" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STEP 4: 健康备注、Google ID 与成长期望 ================= -->
+      <section class="step-section" data-step="4">
+        <div class="border-b-2 border-amber-100 pb-4 mb-6">
+          <div class="inline-block bg-red-100 text-red-700 text-xs font-extrabold px-3 py-1 rounded-full mb-2">
+            STEP 4 · 健康备注与成长期望
+          </div>
+          <h2 class="text-lg sm:text-xl font-extrabold text-slate-900 flex items-center gap-2">
+            <span class="w-2 h-6 bg-red-600 rounded-full inline-block"></span>
+            健康备注、学习账号与成长目标｜Support & Goals
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">帮助我们的老师更全面地照顾孩子的日常饮食与全人教育成长。</p>
+        </div>
+
+        <div class="space-y-5">
+          <div>
+            <label class="block text-sm font-bold text-slate-800 mb-1">
+              16. 特别备注（如：食物敏感、健康状况）<span class="text-xs font-normal text-slate-400">（选填 Optional）</span>
+              <span class="block text-xs font-normal text-slate-500">Special Remark (e.g., Food Allergy / Medical Condition)</span>
+            </label>
+            <textarea name="specialRemark" rows="2" placeholder="若无特殊状况可留空 / Leave blank if none"
+              class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-red-600 outline-none text-sm"></textarea>
+          </div>
+
+          <div class="bg-sky-50/70 p-4 rounded-xl border border-sky-200">
+            <p class="text-xs font-extrabold text-sky-900 mb-3">💻 功课辅导班专用｜For Homework Class Only（选填 Optional）</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-bold text-slate-800 mb-1">
+                  17. Google ID User Name
+                  <span class="block text-xs font-normal text-slate-500">功课辅导班 / Homework Class</span>
+                </label>
+                <input type="text" name="googleUser" placeholder="m-xxxxxxxx@moe-dl.edu.my"
+                  class="w-full px-3.5 py-2 rounded-xl bg-white border border-slate-300 focus:border-red-600 outline-none text-sm" />
+              </div>
+              <div>
+                <label class="block text-sm font-bold text-slate-800 mb-1">
+                  18. Google ID Passcode / Password
+                  <span class="block text-xs font-normal text-slate-500">功课辅导班 / Homework Class</span>
+                </label>
+                <input type="text" name="googlePass" placeholder="学校 Google 登入通行码"
+                  class="w-full px-3.5 py-2 rounded-xl bg-white border border-slate-300 focus:border-red-600 outline-none text-sm" />
+              </div>
+            </div>
+          </div>
+
+          <div id="goalsSectionBox">
+            <div class="flex items-center justify-between mb-2">
+              <label class="block text-sm font-bold text-slate-800">
+                19. 您最想看到孩子哪一方面的进步？（请最多选择 3 项）<span class="text-red-600">*</span>
+                <span class="block text-xs font-normal text-slate-500">In which areas do you most hope your child will improve? Please choose up to 3 items only.</span>
+              </label>
+              <span id="goalCountBadge" class="shrink-0 px-3 py-1 rounded-full text-xs font-extrabold bg-red-100 text-red-700">已选 0 / 3</span>
+            </div>
+
+            <div class="space-y-2.5" id="goalsContainer">
+              <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 cursor-pointer transition">
+                <input type="checkbox" name="improvementGoals" value="📚 学业基础与成绩｜Academic Competence" class="goal-checkbox mt-1 accent-red-600" />
+                <div class="text-sm">
+                  <div class="font-bold text-slate-800">📚 学业基础与成绩｜巩固基础、学科理解与成绩提升</div>
+                  <div class="text-xs text-slate-500">Academic Competence | Solid foundation, subject mastery & grade improvement</div>
+                </div>
+              </label>
+
+              <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 cursor-pointer transition">
+                <input type="checkbox" name="improvementGoals" value="🌱 良好习惯养成｜Habit Building" class="goal-checkbox mt-1 accent-red-600" />
+                <div class="text-sm">
+                  <div class="font-bold text-slate-800">🌱 良好习惯养成｜自律专注、责任心与时间管理</div>
+                  <div class="text-xs text-slate-500">Habit Building | Self-discipline, responsibility & time management</div>
+                </div>
+              </label>
+
+              <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 cursor-pointer transition">
+                <input type="checkbox" name="improvementGoals" value="🧠 思维与解题能力｜Cognitive & Thinking Skills" class="goal-checkbox mt-1 accent-red-600" />
+                <div class="text-sm">
+                  <div class="font-bold text-slate-800">🧠 思维与解题能力｜逻辑推理、创意思维与独立解决问题</div>
+                  <div class="text-xs text-slate-500">Cognitive & Thinking Skills | Logical reasoning, creativity & problem-solving</div>
+                </div>
+              </label>
+
+              <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 cursor-pointer transition">
+                <input type="checkbox" name="improvementGoals" value="🎤 沟通表达与自信｜Expression & Confidence" class="goal-checkbox mt-1 accent-red-600" />
+                <div class="text-sm">
+                  <div class="font-bold text-slate-800">🎤 沟通表达与自信｜人前表达、清晰沟通与自信心塑造</div>
+                  <div class="text-xs text-slate-500">Expression & Confidence | Clear communication, public speaking & self-assurance</div>
+                </div>
+              </label>
+
+              <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 cursor-pointer transition">
+                <input type="checkbox" name="improvementGoals" value="❤️ 心理韧性与情绪管理｜Mental Resilience" class="goal-checkbox mt-1 accent-red-600" />
+                <div class="text-sm">
+                  <div class="font-bold text-slate-800">❤️ 心理韧性与情绪管理｜情绪调节、抗挫折力与积极成长心态</div>
+                  <div class="text-xs text-slate-500">Mental Resilience | Emotional regulation, adversity coping & positive mindset</div>
+                </div>
+              </label>
+
+              <label class="option-card flex items-start gap-3 p-3.5 rounded-xl border border-slate-200 cursor-pointer transition">
+                <input type="checkbox" name="improvementGoals" value="🤝 社交与人际交往｜Social & Interpersonal Skills" class="goal-checkbox mt-1 accent-red-600" />
+                <div class="text-sm">
+                  <div class="font-bold text-slate-800">🤝 社交与人际交往｜团队协作、同理心与同伴关系发展</div>
+                  <div class="text-xs text-slate-500">Social & Interpersonal Skills | Team collaboration, empathy & peer interaction</div>
+                </div>
+              </label>
+
+              <div class="option-card p-3.5 rounded-xl border border-slate-200 transition">
+                <label class="flex items-center gap-3 cursor-pointer text-sm font-bold text-slate-800">
+                  <input type="checkbox" id="goalOtherCheck" class="goal-checkbox accent-red-600" />
+                  <span>其他｜Other:</span>
+                </label>
+                <input type="text" id="goalOtherText" placeholder="请注明您的其他期望 Please specify..."
+                  class="mt-2 w-full px-3 py-1.5 rounded-lg border border-slate-200 text-sm outline-none focus:border-red-600" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STEP 5: 推荐渠道与汇款确认 ================= -->
+      <section class="step-section" data-step="5">
+        <div class="border-b-2 border-amber-100 pb-4 mb-6">
+          <div class="inline-block bg-red-100 text-red-700 text-xs font-extrabold px-3 py-1 rounded-full mb-2">
+            STEP 5 · 最后一步：汇款确认与提交
+          </div>
+          <h2 class="text-lg sm:text-xl font-extrabold text-slate-900 flex items-center gap-2">
+            <span class="w-2 h-6 bg-red-600 rounded-full inline-block"></span>
+            认识渠道与汇款确认｜Referral & Payment
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">完成最后两道题并核对您的学费结算，点击提交后将为您生成 WhatsApp 报名摘要。</p>
+        </div>
+
+        <div class="space-y-6">
+          <div>
+            <label class="block text-sm font-bold text-slate-800 mb-1">
+              22. 介绍人 <span class="text-xs font-normal text-slate-400">（选填 Optional）</span>
+              <span class="block text-xs font-normal text-slate-500">Referral by</span>
+            </label>
+            <input type="text" name="referralBy" placeholder="如有介绍人请填写姓名"
+              class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:border-red-600 outline-none text-sm" />
+          </div>
+
+          <div id="knowUsSectionBox">
+            <label class="block text-sm font-bold text-slate-800 mb-2">
+              23. 您怎样认识我们？ <span class="text-red-600">*</span>
+              <span class="block text-xs font-normal text-slate-500">How did you get to know us?</span>
+            </label>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5" id="knowUsContainer">
+              <label class="option-card flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 cursor-pointer text-sm font-medium">
+                <input type="checkbox" name="knowUs" value="朋友介绍 Friend referral" class="know-checkbox accent-red-600" />
+                <span>朋友介绍｜Friend referral</span>
+              </label>
+              <label class="option-card flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 cursor-pointer text-sm font-medium">
+                <input type="checkbox" name="knowUs" value="学生介绍 Students referral" class="know-checkbox accent-red-600" />
+                <span>学生介绍｜Students referral</span>
+              </label>
+              <label class="option-card flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 cursor-pointer text-sm font-medium">
+                <input type="checkbox" name="knowUs" value="学校老师介绍 Teacher's referral" class="know-checkbox accent-red-600" />
+                <span>学校老师介绍｜Teacher's referral</span>
+              </label>
+              <label class="option-card flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 cursor-pointer text-sm font-medium">
+                <input type="checkbox" name="knowUs" value="家长群 Parent Group" class="know-checkbox accent-red-600" />
+                <span>家长群｜Parent Group</span>
+              </label>
+              <label class="option-card flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 cursor-pointer text-sm font-medium">
+                <input type="checkbox" name="knowUs" value="面子书 Facebook Instagram" class="know-checkbox accent-red-600" />
+                <span>面子书｜Facebook / Instagram</span>
+              </label>
+              <label class="option-card flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 cursor-pointer text-sm font-medium">
+                <input type="checkbox" name="knowUs" value="抖音 小红书 TIKTOK" class="know-checkbox accent-red-600" />
+                <span>抖音 / 小红书｜TikTok / XHS</span>
+              </label>
+              <label class="option-card flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 cursor-pointer text-sm font-medium">
+                <input type="checkbox" name="knowUs" value="报纸 Newspaper" class="know-checkbox accent-red-600" />
+                <span>报纸｜Newspaper</span>
+              </label>
+              <label class="option-card flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 cursor-pointer text-sm font-medium">
+                <input type="checkbox" name="knowUs" value="广告Banner" class="know-checkbox accent-red-600" />
+                <span>广告横幅｜Outdoor Banner</span>
+              </label>
+              <label class="option-card flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 cursor-pointer text-sm font-medium">
+                <input type="checkbox" name="knowUs" value="传单/ Flyers" class="know-checkbox accent-red-600" />
+                <span>传单｜Flyers</span>
+              </label>
+              <label class="option-card flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 cursor-pointer text-sm font-medium">
+                <input type="checkbox" name="knowUs" value="路过中心看到 Passby our center" class="know-checkbox accent-red-600" />
+                <span>路过中心看到｜Passby our center</span>
+              </label>
+              <label class="option-card flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 cursor-pointer text-sm font-medium sm:col-span-2">
+                <input type="checkbox" name="knowUs" value="兄弟姐妹在我们中心补习" class="know-checkbox accent-red-600" />
+                <span>兄弟姐妹在我们中心补习｜Sibling studying at our center</span>
+              </label>
+              <div class="option-card p-3 rounded-xl border border-slate-200 sm:col-span-2">
+                <label class="flex items-center gap-2.5 cursor-pointer text-sm font-bold">
+                  <input type="checkbox" id="knowOtherCheck" class="know-checkbox accent-red-600" />
+                  <span>其他｜Other:</span>
+                </label>
+                <input type="text" id="knowOtherText" placeholder="请注明 Please specify..."
+                  class="mt-2 w-full px-3 py-1.5 rounded-lg border border-slate-200 text-sm outline-none focus:border-red-600" />
+              </div>
+            </div>
+          </div>
+
+          <!-- 最终费用核对卡片 -->
+          <div class="rounded-2xl bg-amber-50 border-2 border-amber-300 p-5">
+            <div class="text-xs font-extrabold uppercase tracking-wider text-red-600 mb-3">
+              🧾 您的费用最终结算｜Final Fee Breakdown
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-3.5 border border-amber-200">
+                <span class="text-xs text-slate-500 font-semibold block">首月总付费（含一次性报名费 RM90 赠 LK T-shirt）</span>
+                <span id="finalFirstMonth" class="text-2xl font-black text-red-600 mt-1 block">RM 90</span>
+              </div>
+              <div class="bg-white rounded-xl p-3.5 border border-amber-200">
+                <span class="text-xs text-slate-500 font-semibold block">第 2 个月开始每月总付费（已移除 RM90 报名费）</span>
+                <span id="finalSubMonth" class="text-2xl font-black text-emerald-700 mt-1 block">RM 0</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 汇款账户高级卡片 -->
+          <div class="rounded-2xl bg-gradient-to-br from-slate-900 via-red-950 to-slate-900 text-white p-5 sm:p-6 shadow-md border-2 border-amber-400/40">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-extrabold uppercase tracking-widest text-amber-300">💳 官方汇款户头 Bank Transfer Details</span>
+              <span class="text-xs bg-white/10 px-2.5 py-1 rounded-full font-semibold">Hong Leong Bank (HLB)</span>
+            </div>
+            <p class="text-sm text-amber-200 font-semibold">ALLSTARS EDU LK 补习中心</p>
+            <p class="text-base sm:text-lg font-extrabold tracking-wide mt-0.5">PUSAT JAGAAN SINAR CAHAYA LK</p>
+
+            <div class="mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-white/10 rounded-xl p-3.5 border border-white/15">
+              <div>
+                <span class="text-xs text-slate-300 block">HLB Account Number</span>
+                <span id="bankAccNum" class="text-xl font-mono font-extrabold tracking-wider text-amber-300">05500183240</span>
+              </div>
+              <button type="button" onclick="copyBankAccount()" id="copyBtn"
+                class="px-4 py-2 rounded-lg bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-xs transition shrink-0">
+                复制银行账号 Copy Account
+              </button>
+            </div>
+            <p class="text-xs text-slate-200 mt-3">
+              📲 提交表格后将为您打开 WhatsApp (<strong class="text-amber-300">+60126358761</strong>)，您可直接附上转账收据（Bank-in Slip）。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 步骤切换按钮栏 -->
+      <div class="mt-8 pt-5 border-t border-slate-200 flex items-center justify-between gap-4">
+        <button type="button" id="prevBtn" onclick="changeStep(-1)"
+          class="hidden px-5 py-2.5 rounded-xl border-2 border-slate-300 text-slate-700 hover:bg-slate-50 font-bold text-sm transition">
+          ← 上一步 Back
+        </button>
+        <div class="ml-auto flex items-center gap-3">
+          <button type="button" id="nextBtn" onclick="changeStep(1)"
+            class="px-6 py-3 rounded-xl bg-red-600 hover:bg-red-500 text-white font-extrabold text-sm shadow-md transition">
+            已选好课程，开始填写学生资料 →
+          </button>
+          <button type="submit" id="submitBtn"
+            class="hidden px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm shadow-lg transition">
+            ✅ 提交报名并跳转 WhatsApp
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- 关键防遮挡安全留白垫高区 -->
+    <div class="h-44 sm:h-36" aria-hidden="true"></div>
+  </main>
+
+  <!-- 底部紧凑型悬浮统计栏 -->
+  <div class="fixed bottom-0 inset-x-0 bg-white/95 backdrop-blur-md border-t-2 border-red-600 shadow-2xl z-40">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-2.5 flex items-center justify-between gap-3">
+      <div id="feeBreakdownText" class="text-xs font-bold text-slate-700 truncate">
+        当前已选 0 项服务
+      </div>
+      <div class="flex items-center gap-4 sm:gap-6 shrink-0">
+        <div class="text-right">
+          <span class="text-[10px] sm:text-[11px] text-slate-500 font-semibold block">首月总计 (含RM90报名费)</span>
+          <span id="firstMonthDisplay" class="text-base sm:text-xl font-black text-red-600">RM 90</span>
+        </div>
+        <div class="h-7 w-px bg-slate-200"></div>
+        <div class="text-right">
+          <span class="text-[10px] sm:text-[11px] text-emerald-700 font-bold block">第2月起总付费 (移除RM90)</span>
+          <span id="subsequentMonthDisplay" class="text-base sm:text-xl font-black text-emerald-700">RM 0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 提交成功与一键跳转 WhatsApp 弹窗 -->
+  <div id="successModal" class="hidden fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 sm:p-8 text-center shadow-2xl border-2 border-amber-300">
+      <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-4 font-bold">
+        ✓
+      </div>
+      <h3 class="text-xl font-extrabold text-slate-900">报名资料已成功提交！</h3>
+      <p class="text-xs text-slate-500 mt-1">Registration Saved Successfully</p>
+      <p class="text-sm text-slate-600 mt-4 leading-relaxed">
+        您的报名资料已安全存入 <strong>LK❤️EDU TAMAN CONNAUGHT</strong> 系统。<br/>
+        请点击下方绿色按钮打开 WhatsApp 发送报名摘要与转账收据（Bank-in Slip）：
+      </p>
+      <a id="waRedirectBtn" href="#" target="_blank" rel="noopener noreferrer"
+        class="mt-6 w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm shadow-lg transition">
+        📲 点击打开 WhatsApp 发送摘要 (+60126358761)
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // =========================================================================
+    // ★ 必填配置：把你在 Google Sheet Apps Script 部署得到的 Web App URL 粘贴在下方双引号内
+    // =========================================================================
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzkym8FXQ3lBs7yCAmEPZZGMMMMIKV9kmiu8-LZR7ry4qzt2zlleralD7O_1CH0yIQt/exec";
+    const WHATSAPP_NUMBER = "60126358761";
+    const REGISTRATION_FEE = 90;
+
+    let currentStep = 1;
+    const totalSteps = 5;
+    const stepTitles = [
+      "第 1 / 5 步：了解收费与勾选课程 Courses & Fees",
+      "第 2 / 5 步：学生基本资料 Student Particulars",
+      "第 3 / 5 步：家长联络与接送安全 Parent & Pick-up",
+      "第 4 / 5 步：健康备注与成长目标 Support & Goals",
+      "第 5 / 5 步：认识渠道与汇款确认 Referral & Payment"
+    ];
+
+    document.querySelectorAll('input, textarea').forEach(el => {
+      el.addEventListener('input', () => el.classList.remove('input-error'));
+      el.addEventListener('change', () => el.classList.remove('input-error'));
+    });
+
+    const goalCheckboxes = document.querySelectorAll('.goal-checkbox');
+    const goalCountBadge = document.getElementById('goalCountBadge');
+
+    goalCheckboxes.forEach(cb => {
+      cb.addEventListener('change', () => {
+        const checkedCount = document.querySelectorAll('.goal-checkbox:checked').length;
+        goalCountBadge.textContent = `已选 ${checkedCount} / 3`;
+        goalCheckboxes.forEach(item => {
+          const card = item.closest('.option-card');
+          if (!item.checked && checkedCount >= 3) {
+            item.disabled = true;
+            card.classList.add('disabled-card');
+          } else {
+            item.disabled = false;
+            card.classList.remove('disabled-card');
+          }
+        });
+      });
+    });
+
+    const courseCheckboxes = document.querySelectorAll('.course-checkbox');
+    const firstMonthDisplay = document.getElementById('firstMonthDisplay');
+    const subsequentMonthDisplay = document.getElementById('subsequentMonthDisplay');
+    const inlineFirstMonth = document.getElementById('inlineFirstMonth');
+    const inlineSubMonth = document.getElementById('inlineSubMonth');
+    const finalFirstMonth = document.getElementById('finalFirstMonth');
+    const finalSubMonth = document.getElementById('finalSubMonth');
+    const feeBreakdownText = document.getElementById('feeBreakdownText');
+
+    function calculateTotalFee() {
+      let subMin = 0;
+      let subMax = 0;
+      let hasPlus = false;
+      let count = 0;
+
+      courseCheckboxes.forEach(cb => {
+        if (cb.checked) {
+          count++;
+          subMin += parseInt(cb.dataset.min || "0", 10);
+          subMax += parseInt(cb.dataset.max || "0", 10);
+          if (cb.dataset.plus === "true") hasPlus = true;
+        }
+      });
+
+      const subFormatted = (subMin === subMax)
+        ? `RM ${subMin}${hasPlus ? '+' : ''}`
+        : `RM ${subMin} – RM ${subMax}${hasPlus ? '+' : ''}`;
+
+      const firstMin = subMin + REGISTRATION_FEE;
+      const firstMax = subMax + REGISTRATION_FEE;
+      const firstFormatted = (subMin === subMax)
+        ? `RM ${firstMin}${hasPlus ? '+' : ''}`
+        : `RM ${firstMin} – RM ${firstMax}${hasPlus ? '+' : ''}`;
+
+      firstMonthDisplay.textContent = firstFormatted;
+      subsequentMonthDisplay.textContent = subFormatted;
+      inlineFirstMonth.textContent = firstFormatted;
+      inlineSubMonth.textContent = subFormatted;
+      if (finalFirstMonth) finalFirstMonth.textContent = firstFormatted;
+      if (finalSubMonth) finalSubMonth.textContent = subFormatted;
+
+      feeBreakdownText.textContent = count > 0
+        ? `✅ 已选 ${count} 项服务`
+        : `当前已选 0 项服务`;
+
+      return {
+        firstFormatted: firstFormatted,
+        subsequentFormatted: subFormatted,
+        count: count
+      };
+    }
+
+    courseCheckboxes.forEach(cb => cb.addEventListener('change', calculateTotalFee));
+
+    function showError(msg, targetEl) {
+      const alertBox = document.getElementById('errorAlert');
+      document.getElementById('errorText').textContent = msg;
+      alertBox.classList.remove('hidden');
+
+      if (targetEl) {
+        targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else {
+        alertBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+
+    function hideError() {
+      document.getElementById('errorAlert').classList.add('hidden');
+    }
+
+    function validateStep(step) {
+      hideError();
+      const section = document.querySelector(`.step-section[data-step="${step}"]`);
+      if (!section) return true;
+
+      if (step === 1) {
+        const coursesChecked = document.querySelectorAll('.course-checkbox:checked').length;
+        if (coursesChecked === 0) {
+          showError("⚠️ 请先在收费表中勾选至少 1 项您要报读的课程或服务。", document.getElementById('coursesContainer'));
+          return false;
+        }
+      }
+
+      const requiredInputs = section.querySelectorAll('input[required], textarea[required]');
+      for (const input of requiredInputs) {
+        const labelName = input.getAttribute('data-label') || input.name;
+        if (input.type === 'radio') {
+          const radioGroup = section.querySelectorAll(`input[name="${input.name}"]:checked`);
+          if (radioGroup.length === 0) {
+            showError(`⚠️ 请先选择必填项：【${labelName}】`, document.getElementById('genderGroup'));
+            return false;
+          }
+        } else if (!input.value || !input.value.trim()) {
+          input.classList.add('input-error');
+          input.focus();
+          showError(`⚠️ 请先填写必填项：【${labelName}】`, input);
+          return false;
+        }
+      }
+
+      if (step === 4) {
+        const goalsChecked = document.querySelectorAll('.goal-checkbox:checked').length;
+        if (goalsChecked === 0 || goalsChecked > 3) {
+          showError("⚠️ 第 19 题请至少勾选 1 项、最多勾选 3 项您期望孩子进步的方面。", document.getElementById('goalsSectionBox'));
+          return false;
+        }
+      }
+
+      if (step === 5) {
+        const knowChecked = document.querySelectorAll('.know-checkbox:checked').length;
+        if (knowChecked === 0) {
+          showError("⚠️ 第 23 题请勾选您是如何认识我们的。", document.getElementById('knowUsSectionBox'));
+          return false;
+        }
+      }
+
+      return true;
+    }
+
+    function changeStep(delta) {
+      if (delta > 0 && !validateStep(currentStep)) return;
+      currentStep += delta;
+
+      document.querySelectorAll('.step-section').forEach(sec => {
+        sec.classList.toggle('active', parseInt(sec.dataset.step, 10) === currentStep);
+      });
+
+      const pct = Math.round((currentStep / totalSteps) * 100);
+      document.getElementById('progressBar').style.width = `${pct}%`;
+      document.getElementById('stepPercentDisplay').textContent = `${pct}%`;
+      document.getElementById('stepTitleDisplay').textContent = stepTitles[currentStep - 1];
+
+      for (let i = 1; i <= totalSteps; i++) {
+        const tab = document.getElementById(`tab-${i}`);
+        tab.className = i <= currentStep ? "text-red-600 font-extrabold" : "text-slate-400";
+      }
+
+      const nextBtn = document.getElementById('nextBtn');
+      nextBtn.textContent = currentStep === 1 ? "已选好课程，开始填写学生资料 →" : "下一步 Next →";
+
+      document.getElementById('prevBtn').classList.toggle('hidden', currentStep === 1);
+      nextBtn.classList.toggle('hidden', currentStep === totalSteps);
+      document.getElementById('submitBtn').classList.toggle('hidden', currentStep !== totalSteps);
+
+      document.getElementById('topProgressCard').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function copyBankAccount() {
+      navigator.clipboard.writeText("05500183240");
+      const btn = document.getElementById('copyBtn');
+      btn.textContent = "✓ 已复制 Copied!";
+      setTimeout(() => { btn.textContent = "复制银行账号 Copy Account"; }, 2000);
+    }
+
+    // 提交事件（自动兼容 Vercel 跨站提交与 Google Apps Script 内部提交）
+    document.getElementById('registrationForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      if (!validateStep(5)) return;
+
+      const submitBtn = document.getElementById('submitBtn');
+      submitBtn.disabled = true;
+      submitBtn.textContent = "⏳ 正在保存资料 Saving...";
+
+      const formData = new FormData(this);
+
+      const goals = Array.from(document.querySelectorAll('input[name="improvementGoals"]:checked')).map(el => el.value);
+      if (document.getElementById('goalOtherCheck').checked) {
+        const otherVal = document.getElementById('goalOtherText').value.trim();
+        if (otherVal) goals.push(`Other: ${otherVal}`);
+      }
+
+      const courses = Array.from(document.querySelectorAll('input[name="courses"]:checked')).map(el => el.value);
+      if (document.getElementById('courseOtherCheck').checked) {
+        const otherCourse = document.getElementById('courseOtherText').value.trim();
+        if (otherCourse) courses.push(`Other: ${otherCourse}`);
+      }
+
+      const knowUs = Array.from(document.querySelectorAll('input[name="knowUs"]:checked')).map(el => el.value);
+      if (document.getElementById('knowOtherCheck').checked) {
+        const otherKnow = document.getElementById('knowOtherText').value.trim();
+        if (otherKnow) knowUs.push(`Other: ${otherKnow}`);
+      }
+
+      const feeInfo = calculateTotalFee();
+
+      const payload = {
+        timestamp: new Date().toLocaleString('zh-MY'),
+        chineseName: formData.get('chineseName'),
+        englishName: formData.get('englishName'),
+        gender: formData.get('gender'),
+        school: formData.get('school'),
+        studentClass: formData.get('studentClass'),
+        mykid: formData.get('mykid'),
+        age: formData.get('age'),
+        parent1Name: formData.get('parent1Name'),
+        parent1Phone: formData.get('parent1Phone'),
+        parent1Relation: formData.get('parent1Relation'),
+        parent2Name: formData.get('parent2Name'),
+        parent2Phone: formData.get('parent2Phone'),
+        parent2Relation: formData.get('parent2Relation'),
+        address: formData.get('address'),
+        carPlate: formData.get('carPlate') || 'N/A',
+        specialRemark: formData.get('specialRemark') || 'N/A',
+        googleUser: formData.get('googleUser') || 'N/A',
+        googlePass: formData.get('googlePass') || 'N/A',
+        improvementGoals: goals.join(' | '),
+        courses: courses.join(' ;\n'),
+        joiningMonth: formData.get('joiningMonth'),
+        referralBy: formData.get('referralBy') || 'N/A',
+        knowUs: knowUs.join(' | '),
+        estimatedTotal: feeInfo.firstFormatted,
+        subsequentMonthTotal: feeInfo.subsequentFormatted
+      };
+
+      const waMessage =
+`🌟 *LK❤️EDU TAMAN CONNAUGHT 2026-2027 新生报名确认* 🌟
+━━━━━━━━━━━━━━━━━━
+👧 *学生姓名*: ${payload.chineseName} (${payload.englishName})
+🪪 *性别 / 年龄*: ${payload.gender} | ${payload.age}
+🏫 *学校与班级*: ${payload.school} (${payload.studentClass})
+🔢 *MyKid*: ${payload.mykid}
+
+👨‍👩‍👧 *第一家长*: ${payload.parent1Name} (${payload.parent1Relation}) - ${payload.parent1Phone}
+🚗 *接送车牌*: ${payload.carPlate}
+🗓️ *加入月份*: ${payload.joiningMonth}
+
+📚 *报读课程与服务*:
+${courses.map(c => `• ${c}`).join('\n')}
+
+💰 *首月总额 (含RM90报名费)*: *${payload.estimatedTotal}*
+🔄 *第2个月起续费总额 (移除RM90)*: *${payload.subsequentMonthTotal}*
+━━━━━━━━━━━━━━━━━━
+💳 我已了解汇款户口：HLB 05500183240 (PUSAT JAGAAN SINAR CAHAYA LK)，以下附上我的转账收据 (Bank-in Slip)：`;
+
+      const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`;
+      document.getElementById('waRedirectBtn').href = waUrl;
+
+      // 情况 A：如果在 Vercel 等外部网站运行，使用 fetch POST 把数据传给 Google Sheets
+      if (GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL.startsWith("https://script.google.com")) {
+        try {
+          await fetch(GOOGLE_SCRIPT_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify(payload)
+          });
+        } catch (err) {
+          console.warn("Google Sheets 同步警告：", err);
+        }
+        document.getElementById('successModal').classList.remove('hidden');
+        window.location.href = waUrl;
+      }
+      // 情况 B：如果在 Google Apps Script 内部运行
+      else if (typeof google !== 'undefined' && google.script && google.script.run) {
+        google.script.run
+          .withSuccessHandler(function() {
+            document.getElementById('successModal').classList.remove('hidden');
+            window.open(waUrl, '_blank');
+          })
+          .submitRegistration(payload);
+      }
+      // 情况 C：未填 URL 时的本地测试兜底
+      else {
+        alert("提示：你还未在代码中填入 GOOGLE_SCRIPT_URL，数据暂未写入 Google Sheet，将直接跳转 WhatsApp。");
+        document.getElementById('successModal').classList.remove('hidden');
+        window.location.href = waUrl;
+      }
+    });
+  </script>
+</body>
+</html>
